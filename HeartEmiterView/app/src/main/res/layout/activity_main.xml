@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context="com.ttinc.android.apps.heartemiterview.MainActivity">
+
+    <ImageView
+        android:id="@+id/emitter_button"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_like_48" />
+
+    <com.ttinc.android.apps.heartemiterview.layout.HeartEmitterView
+        android:id="@+id/emitter_view"
+        android:layout_width="80.0dip"
+        android:layout_height="400.0dip"
+        android:layout_above="@id/emitter_button"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
